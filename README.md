@@ -3,7 +3,7 @@
 ## This documentaion provides details about the Dress Color Suggestion workflow for Women, implemented using Node.js and Express with tokenized requests and role based validations.
 
 ### Implemented with two Aspects:-
-***For Admin*** - To Create,Update and Manage Color Suggestion for Users.And To get Customer Data.(No access to modify Customer Data).
+***For Admin*** - To Create,Update and Manage Color Suggestion for Users.And To get Customer Data.(No access to modify Customer Data).<br/>
 ***For Customers*** - To get Daily Color Suggestions,having their own favorites and get suggestions based on various factors like Mood,Season,Weather and Occasions.
 
 
