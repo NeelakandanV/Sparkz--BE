@@ -19,8 +19,17 @@
 
 # API Endpoints:-
 
-## https://sparkz.onrender.com/
-## https://sparkz.onrender.com/Admin/Login
+# For Admins
+
+### Base Url
+## https://sparkz.onrender.com/ - Get method
+Description : This will Check whether the server is working fine or not.
+
+### Login
+## https://sparkz.onrender.com/Admin/Login - Post method
+Description : Only allow Admins to log in.
+
+### Signup
 ## https://sparkz.onrender.com/Admin/Register
 ## https://sparkz.onrender.com/Admin/ForgotPassword
 ## https://sparkz.onrender.com/Admin/ResetPassword/:id/:pin/:token
