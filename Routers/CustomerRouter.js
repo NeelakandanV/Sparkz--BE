@@ -23,9 +23,9 @@ router.get("/Dashboard",Validate,CustomerDashboard)
 router.put("/UpdateProfile",Validate,Update_Profile)
 
 // Suggestions
-router.get("/Suggestions",Validate,Suggestion)
+router.get("/Suggestions",Suggestion)
 router.get("/SuggestByMood/:id",Validate,Suggestion_ByMood)
-router.get("/SuggestByWeather/:id",Suggestion_ByWeather)
+router.get("/SuggestByWeather/:id",Validate,Suggestion_ByWeather)
 router.get("/SuggestByOccasions/:id",Validate,Suggestion_ByOccasions)
 router.get("/SuggestBySeason/:id",Validate,Suggestion_BySeason)
 

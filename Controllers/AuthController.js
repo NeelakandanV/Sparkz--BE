@@ -97,7 +97,7 @@ export const ForgotPasswordAdmin = async(req,res)=>{
                 Name : find_User.First_Name,
                 Email : find_User.Email
             })
-            const link = `https://sparkz.onrender.com/Admin/ResetPassword/${find_User._id}/${ResetString}/${token}`
+            const link = `http://localhost:5000/Admin/ResetPassword/${find_User._id}/${ResetString}/${token}`
             // for Sending mails - nodemailer
             var transporter = nodemailer.createTransport({
                 service: 'gmail',
@@ -277,7 +277,7 @@ export const ForgotPassword = async(req,res)=>{
                 Name : find_User.First_Name,
                 Email : find_User.Email
             })
-            const link = `https://sparkz.onrender.com/ResetPassword/${find_User._id}/${ResetString}/${token}`
+            const link = `http://localhost:5000/ResetPassword/${find_User._id}/${ResetString}/${token}`
             // for Sending mails - nodemailer
             var transporter = nodemailer.createTransport({
                 service: 'gmail',
@@ -367,7 +367,7 @@ export const VerifyUserLink = async(req,res)=>{
                 Name : find_User.First_Name,
                 Email : find_User.Email
             })
-            const link = `https://sparkz.onrender.com/VerifyUser/${find_User._id}/${ResetString}/${token}`
+            const link = `http://localhost:5000/VerifyUser/${find_User._id}/${ResetString}/${token}`
 
             // for Sending mails - nodemailer
                 var transporter = nodemailer.createTransport({
