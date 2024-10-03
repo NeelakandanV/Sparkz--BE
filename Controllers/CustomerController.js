@@ -203,7 +203,7 @@ export const MyFavorites_List = async(req,res)=>{
         const data = await jwt.decode(token)
         const getFavorites = await Favorites.find({User_Id:data.Id});
         const getFavoriteColors = await Customers.findById(data.Id).populate('FavoriteColors');
-        console.log(getFavoriteColors)
+        // console.log(getFavoriteColors)
         if((getFavorites.length>0 && getFavoriteColors.length>0) || (getFavorites.length>0|| getFavoriteColors.length>0)){
             res.status(200).send({message:"Data Fetch Success!",getFavoriteColors,getFavorites})
         }
