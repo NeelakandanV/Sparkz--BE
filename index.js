@@ -14,7 +14,7 @@ import AdminRouter from "./Routers/AdminRouter.js";
 // Applying Middlewares
 const app = express();
 dotenv.config();
-app.use(cors({origin:"https://sparkz1.netlify.app/"}));
+app.use(cors({origin:"https://sparkz1.netlify.app"}));
 app.use(express.json());
 app.use(requestLogger);
 app.use(cookieParser());
